@@ -11,7 +11,9 @@ from langchain.tools import tool
 import uvicorn
 from tools import tools
 from load_prompts import load_system_prompt
+from dotenv import load_dotenv
 
+load_dotenv()
 
 
 app = FastAPI(
